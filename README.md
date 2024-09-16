@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PDF Combiner
 
-## Getting Started
+A simple web application to combine multiple PDF files into a single PDF file.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+* Select and upload multiple PDF files
+* Combine the uploaded PDF files into a single PDF file
+* Download the combined PDF file
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## How to Use
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Open the application in a web browser.
+2. Click on the "Select Files" button to upload PDF files.
+3. Select the PDF files you want to combine.
+4. Click on the "Combine and Download PDF" button.
+5. Wait for the processing to complete.
+6. The combined PDF file will be downloaded to your computer.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Technical Details
 
-## Learn More
+* The application uses the `pdf-lib` library to manipulate PDF files.
+* The PDF combination process is handled on the server-side using Next.js API routes.
+* The application is built using React and Next.js.
 
-To learn more about Next.js, take a look at the following resources:
+## Limitations
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+* Currently, the application only supports combining PDF files.
+* The application does not support editing or modifying the content of the PDF files.
+* The application does not have any authentication or authorization mechanisms.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Future Development
 
-## Deploy on Vercel
+* Support for combining other file formats.
+* Implementing editing and modification capabilities for PDF files.
+* Adding authentication and authorization mechanisms.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Contributions are welcome! If you'd like to contribute to this project, please fork the repository and submit a pull request.
+
+## License
+
+This project is licensed under the MIT License.
